@@ -9,6 +9,10 @@ import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.util.*;
 
+// For running tests on Windows
+// javac -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" *.java
+// java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore MarkdownParseTest
+
 public class MarkdownParseTest {
     @Test
     public void TestOne() throws IOException, NoSuchFileException {
