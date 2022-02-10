@@ -1,5 +1,4 @@
 
-// JUnit imports
 import static org.junit.Assert.*;
 import org.junit.*;
 
@@ -8,10 +7,6 @@ import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.util.*;
-
-// For running tests on Windows
-// javac -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" *.java
-// java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore MarkdownParseTest
 
 public class MarkdownParseTest {
     @Test
