@@ -27,4 +27,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Compile and run our JUnit tests, also test out echo
-        run: bash test-runner.sh
+        run: make test
