@@ -22,12 +22,16 @@ public class MarkdownParse {
         // List of links found in markdown string
         ArrayList<String> links = new ArrayList<>();
 
+        // Used for tracking brackets in a link
         Stack<Character> bracketTracker = new Stack<>();
 
+        // Index trackers for the current character index, start of a potential
+        // link, and end of a potential link
         int currIndex = 0;
         int start = 0;
         int end = 0;
 
+        // Used to track when we are ready to check out a potential link
         boolean findLink = false;
 
         // Iterate over the text from the markdown file
