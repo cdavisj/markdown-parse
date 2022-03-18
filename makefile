@@ -1,4 +1,4 @@
-path=.:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar
+path=lib/*;.
 
 MarkdownParse.class: MarkdownParse.java
 	javac -g -cp $(path) MarkdownParse.java
@@ -11,3 +11,6 @@ test: MarkdownParseTest.class
 
 debut-test: MarkdownParseTest.class
 	jdb -classpath $(path) org.junit.runner.JUnitCore MarkdownParseTest
+
+TryCommonMark.class: TryCommonMark.java
+	javac -g -cp $(path) TryCommonMark.java
